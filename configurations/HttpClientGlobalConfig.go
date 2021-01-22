@@ -1,7 +1,7 @@
 package configurations
 
 import (
-	cons "http-client/constants"
+	cons "github.com/gautamr347/http-client/constants"
 	"net"
 	"net/http"
 	"time"

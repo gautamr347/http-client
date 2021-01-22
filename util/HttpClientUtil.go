@@ -3,8 +3,8 @@ package util
 import (
 	"bytes"
 	_ "github.com/motemen/go-loghttp/global"
-	config "http-client/configurations"
-	"http-client/constants"
+	config "github.com/gautamr347/http-client/configurations"
+	"github.com/gautamr347/http-client/constants"
 	"net/http"
 )
 
