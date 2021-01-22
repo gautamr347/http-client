@@ -11,8 +11,9 @@ type CustomPayload struct {
 
 func GetToken() string {
 
-	key := "sirion"
-	issuer := "s3crtF9Z8K19ftE0Ces"
+	key := "s3crtF9Z8K19ftE0Ces"
+	issuer := "sirion"
+
 
 	var hs = jwt.NewHS256([]byte(key))
 	pl := CustomPayload{
