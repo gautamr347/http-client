@@ -1,4 +1,4 @@
-module http-client
+module github.com/gautamr347/http-client
 
 go 1.13
 
