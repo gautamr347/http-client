@@ -2,7 +2,7 @@ package util
 
 import (
 	"bytes"
-
+	"github.com/sirupsen/logrus"
 	config "github.com/gautamr347/http-client/configurations"
 	"github.com/gautamr347/http-client/constants"
 	"net/http"
@@ -34,7 +34,8 @@ func HttpRequest(url string, method string, hdrs []*headers, data []byte) (*http
 	}
 
 	client := config.HttpClientCustomConfig()
-
+	logrus.Infof("Request :", method, url)
 	response, err = client.Do(request)
+	logrus.Infof("Response status : ", response.Status)
 	return response, err
 }
